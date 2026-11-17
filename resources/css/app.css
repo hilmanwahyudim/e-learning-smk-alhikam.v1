@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+@source '../views';
+@source '../js';
+
+/*
+ * Identitas visual E-Learning SMK Al Hikam.
+ * Ganti warna di sini; seluruh aplikasi mengikuti (bg-brand-700, text-gold-600, dst).
+ */
+@theme {
+    --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+
+    --color-paper: #f5f6fb;
+    --color-ink: #172033;
+
+    --color-brand-50: #f5f1ff;
+    --color-brand-100: #ebe3ff;
+    --color-brand-200: #d8c9ff;
+    --color-brand-300: #b9a0ff;
+    --color-brand-400: #9a75f5;
+    --color-brand-500: #7b4ce8;
+    --color-brand-600: #6d3bd6;
+    --color-brand-700: #5a2bb8;
+    --color-brand-800: #3d207f;
+    --color-brand-900: #1d2940;
+    --color-brand-950: #121b2d;
+
+    --color-gold-400: #ffb84d;
+    --color-gold-500: #f59e0b;
+    --color-gold-600: #d97706;
+}
+
+@layer base {
+    :focus-visible {
+        outline: 2px solid var(--color-brand-500);
+        outline-offset: 2px;
+    }
+}
